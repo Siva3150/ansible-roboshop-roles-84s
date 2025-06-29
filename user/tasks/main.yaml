@@ -1,16 +1,16 @@
 - name: nodejs 
-  import_role:
+  include_role:
    name: common
    tasks_from: nodejs 
 
 - name: app setup 
-  import_role: 
+  include_role: 
    name: common 
    tasks_from: app-setup 
  
 
 - name: systemd 
-  import_role: 
+  include_role: 
    name: common 
    tasks_from: systemd.yaml 
     
